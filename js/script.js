@@ -92,7 +92,9 @@ document.addEventListener('keydown', (event) => {
     key.classList.toggle('active');
     capsDown = !capsDown;
   } else {
-    key.classList.add('active');
+    if (key !== null) {
+      key.classList.add('active');
+    }
   }
 
   if (eventCode === 'AltLeft' || eventCode === 'AltRight') {
@@ -115,7 +117,9 @@ document.addEventListener('keyup', (event) => {
   const eventCode = event.code;
   const key = document.querySelector(`.${eventCode}`);
   if (eventCode !== 'CapsLock') {
-    key.classList.remove('active');
+    if (key !== null) {
+      key.classList.remove('active');
+    }
   }
 
   if (eventCode === 'AltLeft' || eventCode === 'AltRight') {
