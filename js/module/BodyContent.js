@@ -8,6 +8,7 @@ export default class BodyContent extends Element {
     this.WRAPPER = 'wrapper';
     this.TITLE = 'title';
     this.KEYBOARD_TEXT = 'keyboard-text';
+    this.DESCRIPTION = 'description';
     this.ariaRowCount = 10;
     this.ariaColCount = 50;
   }
@@ -23,9 +24,12 @@ export default class BodyContent extends Element {
     textarea.id = this.KEYBOARD_TEXT;
     textarea.ariaRowCount = this.ariaRowCount;
     textarea.ariaColCount = this.ariaColCount;
+    const description = this.createElement('p', [this.DESCRIPTION]);
+    description.textContent = 'Keyboard created in Windows. Use ctrl + alt for changing language.';
     wrapper.append(title);
     wrapper.append(textarea);
     wrapper.append(this.keyboard);
+    wrapper.append(description);
     body.append(wrapper);
   }
 }
