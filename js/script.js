@@ -2,11 +2,11 @@ import Alphabet from './module/Alphabet.js';
 import Keyboard from './module/Keyboard.js';
 import BodyContent from './module/BodyContent.js';
 
-const enAlphabet = await new Alphabet('../json/keys_en.json');
-const dataEn = enAlphabet.getAlphabetList();
+const enAlphabet = new Alphabet('../json/keys_en.json');
+const dataEn = await enAlphabet.getAlphabetList();
 
-const ruAlphabet = await new Alphabet('../json/keys_ru.json');
-const dataRu = ruAlphabet.getAlphabetList();
+const ruAlphabet = new Alphabet('../json/keys_ru.json');
+const dataRu = await ruAlphabet.getAlphabetList();
 
 let storageLang = localStorage.getItem('lang');
 let controlKeyDown = false;
@@ -20,54 +20,36 @@ if (!storageLang) {
 }
 
 const keyboard = new Keyboard(storageLang);
-let keyboardHtml = keyboard.createKeyboard(dataEn, dataRu);
+const keyboardHtml = keyboard.createKeyboard(dataEn, dataRu);
 const bodyContent = new BodyContent(keyboardHtml);
 bodyContent.getHTML();
 
-document.addEventListener('keydown', (event) => {
-  const key = document.querySelector('.' + event.code);
+function changeLanguage() {
+  const enElements = document.querySelectorAll('.en');
+  enElements.forEach((elem) => {
+    elem.classList.toggle('hidden');
+  });
+  const ruElements = document.querySelectorAll('.ru');
+  ruElements.forEach((elem) => {
+    elem.classList.toggle('hidden');
+  });
+}
 
-  if (event.code === 'CapsLock') {
-    key.classList.toggle('active');
-    capsDown = !capsDown;
-  } else {
-    key.classList.add('active');
-  }
+function keyShow(lang, typeKey) {
+  const elements = document.querySelectorAll(`.${lang} > .${typeKey}`);
+  elements.forEach((elem) => {
+    elem.classList.remove('hidden');
+  });
+}
 
-  if (event.code === 'AltLeft' || event.code === 'AltRight') {
-    altKeyDown = true;
-    event.preventDefault();
-  }
-
-  if (event.code === 'ControlLeft' || event.code === 'ControlRight') {
-    controlKeyDown = true;
-  }
-
-  if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
-    shiftKeyDown = true;
-  }
-
-  changeKeyEvent();
-});
-
-document.addEventListener('keyup', (event) => {
-  const key = document.querySelector('.' + event.code);
-  if (event.code !== 'CapsLock') {
-    key.classList.remove('active');
-  }
-
-  if (event.code === 'AltLeft' || event.code === 'AltRight') {
-    altKeyDown = false;
-  }
-  if (event.code === 'ControlLeft' || event.code === 'ControlRight') {
-    controlKeyDown = false;
-  }
-  if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
-    shiftKeyDown = false;
-  }
-
-  changeKeyEvent();
-});
+function keyHide(lang, typeKey) {
+  const elements = document.querySelectorAll(`.${lang} > .${typeKey}`);
+  elements.forEach((elem) => {
+    if (!elem.classList.contains('hidden')) {
+      elem.classList.add('hidden');
+    }
+  });
+}
 
 function changeKeyEvent() {
   if (controlKeyDown && altKeyDown) {
@@ -102,29 +84,49 @@ function changeKeyEvent() {
   }
 }
 
-function changeLanguage() {
-  const enElements = document.querySelectorAll('.en');
-  enElements.forEach(elem => {
-    elem.classList.toggle('hidden');
-  });
-  const ruElements = document.querySelectorAll('.ru');
-  ruElements.forEach(elem => {
-    elem.classList.toggle('hidden');
-  });
-}
+document.addEventListener('keydown', (event) => {
+  const eventCode = event.code;
+  const key = document.querySelector(`.${eventCode}`);
 
-function keyShow(lang, typeKey) {
-  const elements = document.querySelectorAll(`.${lang} > .${typeKey}`);
-  elements.forEach(elem => {
-    elem.classList.remove('hidden');
-  });
-}
+  if (eventCode === 'CapsLock') {
+    key.classList.toggle('active');
+    capsDown = !capsDown;
+  } else {
+    key.classList.add('active');
+  }
 
-function keyHide(lang, typeKey) {
-  const elements = document.querySelectorAll(`.${lang} > .${typeKey}`);
-  elements.forEach(elem => {
-    if (!elem.classList.contains('hidden')) {
-      elem.classList.add('hidden');
-    }
-  });
-}
+  if (eventCode === 'AltLeft' || eventCode === 'AltRight') {
+    altKeyDown = true;
+    event.preventDefault();
+  }
+
+  if (eventCode === 'ControlLeft' || eventCode === 'ControlRight') {
+    controlKeyDown = true;
+  }
+
+  if (eventCode === 'ShiftLeft' || eventCode === 'ShiftRight') {
+    shiftKeyDown = true;
+  }
+
+  changeKeyEvent();
+});
+
+document.addEventListener('keyup', (event) => {
+  const eventCode = event.code;
+  const key = document.querySelector(`.${eventCode}`);
+  if (eventCode !== 'CapsLock') {
+    key.classList.remove('active');
+  }
+
+  if (eventCode === 'AltLeft' || eventCode === 'AltRight') {
+    altKeyDown = false;
+  }
+  if (eventCode === 'ControlLeft' || eventCode === 'ControlRight') {
+    controlKeyDown = false;
+  }
+  if (eventCode === 'ShiftLeft' || eventCode === 'ShiftRight') {
+    shiftKeyDown = false;
+  }
+
+  changeKeyEvent();
+});

@@ -1,4 +1,4 @@
-import Element from "./Element.js";
+import Element from './Element.js';
 
 export default class Keyboard extends Element {
   constructor(mainLang) {
@@ -16,10 +16,10 @@ export default class Keyboard extends Element {
 
   /**
    * Returns element with created key
-   * 
-   * @param {Object} key 
-   * @param {string} lang 
-   * @param {boolean} allHidden 
+   *
+   * @param {Object} key
+   * @param {string} lang
+   * @param {boolean} allHidden
    * @returns {HTMLElement}
    */
   createKey(key, lang, allHidden = false) {
@@ -38,7 +38,7 @@ export default class Keyboard extends Element {
     const capsShift = this.createElement('span', [this.CAPS_SHIFT, this.HIDDEN]);
     this.addValueToElement(capsShift, key.capsShift);
 
-    let classesName = [];
+    const classesName = [];
     classesName.push(lang);
     if (allHidden) {
       classesName.push(this.HIDDEN);
@@ -54,13 +54,13 @@ export default class Keyboard extends Element {
 
   /**
    * Returns element with created keyboard
-   * 
+   *
    * @param {array} mainAlphabet
    * @param {array} secondaryAlphabet
    * @returns {HTMLElement}
    */
   createKeyboard(mainAlphabet, secondaryAlphabet) {
-    let rowNum = mainAlphabet[0].rowNum;
+    let { rowNum } = mainAlphabet[0];
     const keyboard = this.createElement('div', [this.KEYBOARD]);
     let rowElem = this.createElement('div', [this.ROW]);
 

@@ -1,17 +1,12 @@
 export default class Alphabet {
   constructor(path) {
     this.path = path;
-
-    return this.init();
   }
 
-  async init() {
+  async getAlphabetList() {
     const res = await fetch(this.path);
-    this.data = await res.json();
-    return this;
-  }
+    const data = await res.json();
 
-  getAlphabetList() {
-    return this.data;
+    return data;
   }
 }

@@ -1,4 +1,4 @@
-import Element from "./Element.js";
+import Element from './Element.js';
 
 export default class BodyContent extends Element {
   constructor(keyboard) {
