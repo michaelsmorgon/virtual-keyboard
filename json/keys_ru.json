@@ -1,450 +1,514 @@
 [
   {
     "name": "Backquote",
-    "lowerCase": "ё",
-    "upperCase": "Ё",
+    "defaultKey": "ё",
+    "shiftPressed": "Ё",
     "caps": "Ё",
-    "capsShift": "ё"
+    "capsShift": "ё",
+    "rowNum": 1
   },
   {
     "name": "Digit1",
-    "lowerCase": "1",
-    "upperCase": "!",
+    "defaultKey": "1",
+    "shiftPressed": "!",
     "caps": "1",
-    "capsShift": "!"
+    "capsShift": "!",
+    "rowNum": 1
   },
   {
     "name": "Digit2",
-    "lowerCase": "2",
-    "upperCase": "\"",
+    "defaultKey": "2",
+    "shiftPressed": "\"",
     "caps": "2",
-    "capsShift": "\""
+    "capsShift": "\"",
+    "rowNum": 1
   },
   {
     "name": "Digit3",
-    "lowerCase": "3",
-    "upperCase": "№",
+    "defaultKey": "3",
+    "shiftPressed": "№",
     "caps": "3",
-    "capsShift": "№"
+    "capsShift": "№",
+    "rowNum": 1
   },
   {
     "name": "Digit4",
-    "lowerCase": "4",
-    "upperCase": ";",
+    "defaultKey": "4",
+    "shiftPressed": ";",
     "caps": "4",
-    "capsShift": ";"
+    "capsShift": ";",
+    "rowNum": 1
   },
   {
     "name": "Digit5",
-    "lowerCase": "5",
-    "upperCase": "%",
+    "defaultKey": "5",
+    "shiftPressed": "%",
     "caps": "5",
-    "capsShift": "%"
+    "capsShift": "%",
+    "rowNum": 1
   },
   {
     "name": "Digit6",
-    "lowerCase": "6",
-    "upperCase": ":",
+    "defaultKey": "6",
+    "shiftPressed": ":",
     "caps": "6",
-    "capsShift": ":"
+    "capsShift": ":",
+    "rowNum": 1
   },
   {
     "name": "Digit7",
-    "lowerCase": "7",
-    "upperCase": "?",
+    "defaultKey": "7",
+    "shiftPressed": "?",
     "caps": "7",
-    "capsShift": "?"
+    "capsShift": "?",
+    "rowNum": 1
   },
   {
     "name": "Digit8",
-    "lowerCase": "8",
-    "upperCase": "*",
+    "defaultKey": "8",
+    "shiftPressed": "*",
     "caps": "8",
-    "capsShift": "*"
+    "capsShift": "*",
+    "rowNum": 1
   },
   {
     "name": "Digit9",
-    "lowerCase": "9",
-    "upperCase": "(",
+    "defaultKey": "9",
+    "shiftPressed": "(",
     "caps": "9",
-    "capsShift": "("
+    "capsShift": "(",
+    "rowNum": 1
   },
   {
     "name": "Digit0",
-    "lowerCase": "0",
-    "upperCase": ")",
+    "defaultKey": "0",
+    "shiftPressed": ")",
     "caps": "0",
-    "capsShift": ")"
+    "capsShift": ")",
+    "rowNum": 1
   },
   {
     "name": "Minus",
-    "lowerCase": "-",
-    "upperCase": "_",
+    "defaultKey": "-",
+    "shiftPressed": "_",
     "caps": "-",
-    "capsShift": "_"
+    "capsShift": "_",
+    "rowNum": 1
   },
   {
     "name": "Equal",
-    "lowerCase": "=",
-    "upperCase": "+",
+    "defaultKey": "=",
+    "shiftPressed": "+",
     "caps": "=",
-    "capsShift": "+"
+    "capsShift": "+",
+    "rowNum": 1
   },
   {
     "name": "Backspace",
-    "lowerCase": "Backspace",
-    "upperCase": "Backspace",
+    "defaultKey": "Backspace",
+    "shiftPressed": "Backspace",
     "caps": "Backspace",
-    "capsShift": "Backspace"
+    "capsShift": "Backspace",
+    "rowNum": 1
   },
   {
     "name": "Tab",
-    "lowerCase": "Tab",
-    "upperCase": "Tab",
+    "defaultKey": "Tab",
+    "shiftPressed": "Tab",
     "caps": "Tab",
-    "capsShift": "Tab"
+    "capsShift": "Tab",
+    "rowNum": 2
   },
   {
     "name": "KeyQ",
-    "lowerCase": "й",
-    "upperCase": "Й",
+    "defaultKey": "й",
+    "shiftPressed": "Й",
     "caps": "Й",
-    "capsShift": "й"
+    "capsShift": "й",
+    "rowNum": 2
   },
   {
     "name": "KeyW",
-    "lowerCase": "ц",
-    "upperCase": "Ц",
+    "defaultKey": "ц",
+    "shiftPressed": "Ц",
     "caps": "Ц",
-    "capsShift": "ц"
+    "capsShift": "ц",
+    "rowNum": 2
   },
   {
     "name": "KeyE",
-    "lowerCase": "у",
-    "upperCase": "У",
+    "defaultKey": "у",
+    "shiftPressed": "У",
     "caps": "У",
-    "capsShift": "у"
+    "capsShift": "у",
+    "rowNum": 2
   },
   {
     "name": "KeyR",
-    "lowerCase": "к",
-    "upperCase": "К",
+    "defaultKey": "к",
+    "shiftPressed": "К",
     "caps": "К",
-    "capsShift": "к"
+    "capsShift": "к",
+    "rowNum": 2
   },
   {
     "name": "KeyT",
-    "lowerCase": "е",
-    "upperCase": "Е",
+    "defaultKey": "е",
+    "shiftPressed": "Е",
     "caps": "Е",
-    "capsShift": "е"
+    "capsShift": "е",
+    "rowNum": 2
   },
   {
     "name": "KeyY",
-    "lowerCase": "н",
-    "upperCase": "Н",
+    "defaultKey": "н",
+    "shiftPressed": "Н",
     "caps": "Н",
-    "capsShift": "н"
+    "capsShift": "н",
+    "rowNum": 2
   },
   {
     "name": "KeyU",
-    "lowerCase": "г",
-    "upperCase": "Г",
+    "defaultKey": "г",
+    "shiftPressed": "Г",
     "caps": "Г",
-    "capsShift": "г"
+    "capsShift": "г",
+    "rowNum": 2
   },
   {
     "name": "KeyI",
-    "lowerCase": "ш",
-    "upperCase": "Ш",
+    "defaultKey": "ш",
+    "shiftPressed": "Ш",
     "caps": "Ш",
-    "capsShift": "ш"
+    "capsShift": "ш",
+    "rowNum": 2
   },
   {
     "name": "KeyO",
-    "lowerCase": "щ",
-    "upperCase": "Щ",
+    "defaultKey": "щ",
+    "shiftPressed": "Щ",
     "caps": "Щ",
-    "capsShift": "щ"
+    "capsShift": "щ",
+    "rowNum": 2
   },
   {
     "name": "KeyP",
-    "lowerCase": "з",
-    "upperCase": "З",
+    "defaultKey": "з",
+    "shiftPressed": "З",
     "caps": "З",
-    "capsShift": "з"
+    "capsShift": "з",
+    "rowNum": 2
   },
   {
     "name": "BracketLeft",
-    "lowerCase": "х",
-    "upperCase": "Х",
+    "defaultKey": "х",
+    "shiftPressed": "Х",
     "caps": "Х",
-    "capsShift": "х"
+    "capsShift": "х",
+    "rowNum": 2
   },
   {
     "name": "BracketRight",
-    "lowerCase": "ъ",
-    "upperCase": "Ъ",
+    "defaultKey": "ъ",
+    "shiftPressed": "Ъ",
     "caps": "Ъ",
-    "capsShift": "ъ"
+    "capsShift": "ъ",
+    "rowNum": 2
   },
   {
     "name": "Backslash",
-    "lowerCase": "\\",
-    "upperCase": "/",
+    "defaultKey": "\\",
+    "shiftPressed": "/",
     "caps": "\\",
-    "capsShift": "/"
+    "capsShift": "/",
+    "rowNum": 2
   },
   {
     "name": "Delete",
-    "lowerCase": "Del",
-    "upperCase": "Del",
+    "defaultKey": "Del",
+    "shiftPressed": "Del",
     "caps": "Del",
-    "capsShift": "Del"
+    "capsShift": "Del",
+    "rowNum": 2
   },
   {
     "name": "CapsLock",
-    "lowerCase": "CapsLock",
-    "upperCase": "CapsLock",
+    "defaultKey": "CapsLock",
+    "shiftPressed": "CapsLock",
     "caps": "CapsLock",
-    "capsShift": "CapsLock"
+    "capsShift": "CapsLock",
+    "rowNum": 3
   },
   {
     "name": "KeyA",
-    "lowerCase": "ф",
-    "upperCase": "Ф",
+    "defaultKey": "ф",
+    "shiftPressed": "Ф",
     "caps": "Ф",
-    "capsShift": "ф"
+    "capsShift": "ф",
+    "rowNum": 3
   },
   {
     "name": "KeyS",
-    "lowerCase": "ы",
-    "upperCase": "Ы",
+    "defaultKey": "ы",
+    "shiftPressed": "Ы",
     "caps": "Ы",
-    "capsShift": "ы"
+    "capsShift": "ы",
+    "rowNum": 3
   },
   {
     "name": "KeyD",
-    "lowerCase": "в",
-    "upperCase": "В",
+    "defaultKey": "в",
+    "shiftPressed": "В",
     "caps": "В",
-    "capsShift": "в"
+    "capsShift": "в",
+    "rowNum": 3
   },
   {
     "name": "KeyF",
-    "lowerCase": "а",
-    "upperCase": "А",
+    "defaultKey": "а",
+    "shiftPressed": "А",
     "caps": "А",
-    "capsShift": "а"
+    "capsShift": "а",
+    "rowNum": 3
   },
   {
     "name": "KeyG",
-    "lowerCase": "п",
-    "upperCase": "П",
+    "defaultKey": "п",
+    "shiftPressed": "П",
     "caps": "П",
-    "capsShift": "п"
+    "capsShift": "п",
+    "rowNum": 3
   },
   {
     "name": "KeyH",
-    "lowerCase": "р",
-    "upperCase": "Р",
+    "defaultKey": "р",
+    "shiftPressed": "Р",
     "caps": "Р",
-    "capsShift": "р"
+    "capsShift": "р",
+    "rowNum": 3
   },
   {
     "name": "KeyJ",
-    "lowerCase": "о",
-    "upperCase": "О",
+    "defaultKey": "о",
+    "shiftPressed": "О",
     "caps": "О",
-    "capsShift": "о"
+    "capsShift": "о",
+    "rowNum": 3
   },
   {
     "name": "KeyK",
-    "lowerCase": "л",
-    "upperCase": "Л",
+    "defaultKey": "л",
+    "shiftPressed": "Л",
     "caps": "Л",
-    "capsShift": "л"
+    "capsShift": "л",
+    "rowNum": 3
   },
   {
     "name": "KeyL",
-    "lowerCase": "д",
-    "upperCase": "Д",
+    "defaultKey": "д",
+    "shiftPressed": "Д",
     "caps": "Д",
-    "capsShift": "д"
+    "capsShift": "д",
+    "rowNum": 3
   },
   {
     "name": "Semicolon",
-    "lowerCase": "ж",
-    "upperCase": "Ж",
+    "defaultKey": "ж",
+    "shiftPressed": "Ж",
     "caps": "Ж",
-    "capsShift": "ж"
+    "capsShift": "ж",
+    "rowNum": 3
   },
   {
     "name": "Quote",
-    "lowerCase": "э",
-    "upperCase": "Э",
+    "defaultKey": "э",
+    "shiftPressed": "Э",
     "caps": "Э",
-    "capsShift": "э"
+    "capsShift": "э",
+    "rowNum": 3
   },
   {
     "name": "Enter",
-    "lowerCase": "Enter",
-    "upperCase": "Enter",
+    "defaultKey": "Enter",
+    "shiftPressed": "Enter",
     "caps": "Enter",
-    "capsShift": "Enter"
+    "capsShift": "Enter",
+    "rowNum": 3
   },
   {
     "name": "ShiftLeft",
-    "lowerCase": "Shift",
-    "upperCase": "Shift",
+    "defaultKey": "Shift",
+    "shiftPressed": "Shift",
     "caps": "Shift",
-    "capsShift": "Shift"
+    "capsShift": "Shift",
+    "rowNum": 4
   },
   {
     "name": "KeyZ",
-    "lowerCase": "я",
-    "upperCase": "Я",
+    "defaultKey": "я",
+    "shiftPressed": "Я",
     "caps": "Я",
-    "capsShift": "я"
+    "capsShift": "я",
+    "rowNum": 4
   },
   {
     "name": "KeyX",
-    "lowerCase": "ч",
-    "upperCase": "Ч",
+    "defaultKey": "ч",
+    "shiftPressed": "Ч",
     "caps": "Ч",
-    "capsShift": "ч"
+    "capsShift": "ч",
+    "rowNum": 4
   },
   {
     "name": "KeyC",
-    "lowerCase": "с",
-    "upperCase": "С",
+    "defaultKey": "с",
+    "shiftPressed": "С",
     "caps": "С",
-    "capsShift": "с"
+    "capsShift": "с",
+    "rowNum": 4
   },
   {
     "name": "KeyV",
-    "lowerCase": "м",
-    "upperCase": "М",
+    "defaultKey": "м",
+    "shiftPressed": "М",
     "caps": "М",
-    "capsShift": "м"
+    "capsShift": "м",
+    "rowNum": 4
   },
   {
     "name": "KeyB",
-    "lowerCase": "и",
-    "upperCase": "И",
+    "defaultKey": "и",
+    "shiftPressed": "И",
     "caps": "И",
-    "capsShift": "и"
+    "capsShift": "и",
+    "rowNum": 4
   },
   {
     "name": "KeyN",
-    "lowerCase": "т",
-    "upperCase": "Т",
+    "defaultKey": "т",
+    "shiftPressed": "Т",
     "caps": "Т",
-    "capsShift": "т"
+    "capsShift": "т",
+    "rowNum": 4
   },
   {
     "name": "KeyM",
-    "lowerCase": "ь",
-    "upperCase": "Ь",
+    "defaultKey": "ь",
+    "shiftPressed": "Ь",
     "caps": "Ь",
-    "capsShift": "ь"
+    "capsShift": "ь",
+    "rowNum": 4
   },
   {
     "name": "Comma",
-    "lowerCase": "б",
-    "upperCase": "Б",
+    "defaultKey": "б",
+    "shiftPressed": "Б",
     "caps": "Б",
-    "capsShift": "б"
+    "capsShift": "б",
+    "rowNum": 4
   },
   {
     "name": "Period",
-    "lowerCase": "ю",
-    "upperCase": "Ю",
+    "defaultKey": "ю",
+    "shiftPressed": "Ю",
     "caps": "Ю",
-    "capsShift": "ю"
+    "capsShift": "ю",
+    "rowNum": 4
   },
   {
     "name": "Slash",
-    "lowerCase": ".",
-    "upperCase": ",",
+    "defaultKey": ".",
+    "shiftPressed": ",",
     "caps": ".",
-    "capsShift": ","
+    "capsShift": ",",
+    "rowNum": 4
   },
   {
     "name": "ArrowUp",
-    "lowerCase": "&#x25B2;",
-    "upperCase": "&#x25B2;",
-    "caps": "&#x25B2;",
-    "capsShift": "&#x25B2;"
+    "defaultKey": "\u25B2",
+    "shiftPressed": "\u25B2",
+    "caps": "\u25B2",
+    "capsShift": "\u25B2",
+    "rowNum": 4
   },
   {
     "name": "ShiftRight",
-    "lowerCase": "Shift",
-    "upperCase": "Shift",
+    "defaultKey": "Shift",
+    "shiftPressed": "Shift",
     "caps": "Shift",
-    "capsShift": "Shift"
+    "capsShift": "Shift",
+    "rowNum": 4
   },
   {
     "name": "ControlLeft",
-    "lowerCase": "Ctrl",
-    "upperCase": "Ctrl",
+    "defaultKey": "Ctrl",
+    "shiftPressed": "Ctrl",
     "caps": "Ctrl",
-    "capsShift": "Ctrl"
+    "capsShift": "Ctrl",
+    "rowNum": 5
   },
   {
     "name": "MetaLeft",
-    "lowerCase": "Win",
-    "upperCase": "Win",
+    "defaultKey": "Win",
+    "shiftPressed": "Win",
     "caps": "Win",
-    "capsShift": "Win"
+    "capsShift": "Win",
+    "rowNum": 5
   },
   {
     "name": "AltLeft",
-    "lowerCase": "Alt",
-    "upperCase": "Alt",
+    "defaultKey": "Alt",
+    "shiftPressed": "Alt",
     "caps": "Alt",
-    "capsShift": "Alt"
+    "capsShift": "Alt",
+    "rowNum": 5
   },
   {
     "name": "Space",
-    "lowerCase": " ",
-    "upperCase": " ",
+    "defaultKey": " ",
+    "shiftPressed": " ",
     "caps": " ",
-    "capsShift": " "
+    "capsShift": " ",
+    "rowNum": 5
   },
   {
     "name": "AltRight",
-    "lowerCase": "Alt",
-    "upperCase": "Alt",
+    "defaultKey": "Alt",
+    "shiftPressed": "Alt",
     "caps": "Alt",
-    "capsShift": "Alt"
+    "capsShift": "Alt",
+    "rowNum": 5
   },
   {
     "name": "ArrowLeft",
-    "lowerCase": "&#x25C0;",
-    "upperCase": "&#x25C0;",
-    "caps": "&#x25C0;",
-    "capsShift": "&#x25C0;"
+    "defaultKey": "\u25C0",
+    "shiftPressed": "\u25C0",
+    "caps": "\u25C0",
+    "capsShift": "\u25C0",
+    "rowNum": 5
   },
   {
     "name": "ArrowDown",
-    "lowerCase": "&#x25BC;",
-    "upperCase": "&#x25BC;",
-    "caps": "&#x25BC;",
-    "capsShift": "&#x25BC;"
+    "defaultKey": "\u25BC",
+    "shiftPressed": "\u25BC",
+    "caps": "\u25BC",
+    "capsShift": "\u25BC",
+    "rowNum": 5
   },
   {
     "name": "ArrowRight",
-    "lowerCase": "&#x25B6;",
-    "upperCase": "&#x25B6;",
-    "caps": "&#x25B6;",
-    "capsShift": "&#x25B6;"
+    "defaultKey": "\u25B6",
+    "shiftPressed": "\u25B6",
+    "caps": "\u25B6",
+    "capsShift": "\u25B6",
+    "rowNum": 5
   },
   {
     "name": "ControlRight",
-    "lowerCase": "Ctrl",
-    "upperCase": "Ctrl",
+    "defaultKey": "Ctrl",
+    "shiftPressed": "Ctrl",
     "caps": "Ctrl",
-    "capsShift": "Ctrl"
+    "capsShift": "Ctrl",
+    "rowNum": 5
   }
 ]
