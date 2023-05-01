@@ -20,13 +20,7 @@ if (!storageLang) {
 }
 
 const keyboard = new Keyboard(storageLang);
-let keyboardHtml = '';
-if (storageLang === 'en') {
-  keyboardHtml = keyboard.createKeyboard(dataEn, dataRu);
-} else {
-  keyboardHtml = keyboard.createKeyboard(dataRu, dataEn);
-}
-
+let keyboardHtml = keyboard.createKeyboard(dataEn, dataRu);
 const bodyContent = new BodyContent(keyboardHtml);
 bodyContent.getHTML();
 

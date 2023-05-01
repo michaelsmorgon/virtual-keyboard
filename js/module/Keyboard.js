@@ -65,8 +65,8 @@ export default class Keyboard extends Element {
     let rowElem = this.createElement('div', [this.ROW]);
 
     mainAlphabet.forEach((val, ind) => {
-      const mainKey = this.createKey(val, this.lang);
-      const secondaryKey = this.createKey(secondaryAlphabet[ind], (this.lang === 'en' ? 'ru' : this.lang), true);
+      const mainKey = this.createKey(val, 'en', this.lang !== 'en');
+      const secondaryKey = this.createKey(secondaryAlphabet[ind], 'ru', this.lang !== 'ru');
       const key = this.createElement('div', [this.KEY, val.name]);
 
       if (rowNum !== val.rowNum) {
