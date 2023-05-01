@@ -134,3 +134,15 @@ document.addEventListener('keyup', (event) => {
 
   changeKeyEvent();
 });
+
+const keys = document.querySelectorAll('.key');
+keys.forEach((elem) => {
+  elem.addEventListener('mousedown', (event) => {
+    const target = event.currentTarget;
+    target.classList.add('active');
+  });
+  elem.addEventListener('mouseup', (event) => {
+    const target = event.currentTarget;
+    target.classList.remove('active');
+  });
+});
