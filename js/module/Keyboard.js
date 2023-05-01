@@ -1,7 +1,7 @@
 import Element from "./Element.js";
 
 export default class Keyboard extends Element {
-  constructor() {
+  constructor(mainLang) {
     super();
     this.DEFAULT_KEY = 'defaultKey';
     this.SHIFT_PRESSED = 'shiftPressed';
@@ -11,6 +11,7 @@ export default class Keyboard extends Element {
     this.KEYBOARD = 'keyboard';
     this.ROW = 'row';
     this.KEY = 'key';
+    this.lang = mainLang;
   }
 
   /**
@@ -37,7 +38,12 @@ export default class Keyboard extends Element {
     const capsShift = this.createElement('span', [this.CAPS_SHIFT, this.HIDDEN]);
     this.addValueToElement(capsShift, key.capsShift);
 
-    const commonElement = this.createElement('span', [lang]);
+    let classesName = [];
+    classesName.push(lang);
+    if (allHidden) {
+      classesName.push(this.HIDDEN);
+    }
+    const commonElement = this.createElement('span', classesName);
     commonElement.appendChild(defKey);
     commonElement.appendChild(shiftPressed);
     commonElement.appendChild(caps);
@@ -59,8 +65,8 @@ export default class Keyboard extends Element {
     let rowElem = this.createElement('div', [this.ROW]);
 
     mainAlphabet.forEach((val, ind) => {
-      const mainKey = this.createKey(val, 'en');
-      const secondaryKey = this.createKey(secondaryAlphabet[ind], 'ru', true);
+      const mainKey = this.createKey(val, this.lang);
+      const secondaryKey = this.createKey(secondaryAlphabet[ind], (this.lang === 'en' ? 'ru' : this.lang), true);
       const key = this.createElement('div', [this.KEY, val.name]);
 
       if (rowNum !== val.rowNum) {
