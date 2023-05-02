@@ -3,10 +3,10 @@ import Keyboard from './module/Keyboard.js';
 import BodyContent from './module/BodyContent.js';
 import Textarea from './module/Textarea.js';
 
-const enAlphabet = new Alphabet('../json/keys_en.json');
+const enAlphabet = new Alphabet('./json/keys_en.json');
 const dataEn = await enAlphabet.getAlphabetList();
 
-const ruAlphabet = new Alphabet('../json/keys_ru.json');
+const ruAlphabet = new Alphabet('./json/keys_ru.json');
 const dataRu = await ruAlphabet.getAlphabetList();
 
 let storageLang = localStorage.getItem('lang');
