@@ -111,7 +111,7 @@ document.addEventListener('keydown', (event) => {
 
   changeKeyEvent();
   const textarea = new Textarea(storageLang);
-  textarea.addLetter(key);
+  textarea.addLetter(key, eventCode);
 });
 
 document.addEventListener('keyup', (event) => {
@@ -140,7 +140,10 @@ const keys = document.querySelectorAll('.key');
 keys.forEach((elem) => {
   elem.addEventListener('mousedown', (event) => {
     const target = event.currentTarget;
+    const eventCode = target.classList[1];
     target.classList.add('active');
+    const textarea = new Textarea(storageLang);
+    textarea.addLetter(target, eventCode);
   });
   elem.addEventListener('mouseup', (event) => {
     const target = event.currentTarget;
