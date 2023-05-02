@@ -1,6 +1,7 @@
 import Alphabet from './module/Alphabet.js';
 import Keyboard from './module/Keyboard.js';
 import BodyContent from './module/BodyContent.js';
+import Textarea from './module/Textarea.js';
 
 const enAlphabet = new Alphabet('../json/keys_en.json');
 const dataEn = await enAlphabet.getAlphabetList();
@@ -91,10 +92,8 @@ document.addEventListener('keydown', (event) => {
   if (eventCode === 'CapsLock') {
     key.classList.toggle('active');
     capsDown = !capsDown;
-  } else {
-    if (key !== null) {
-      key.classList.add('active');
-    }
+  } else if (key !== null) {
+    key.classList.add('active');
   }
 
   if (eventCode === 'AltLeft' || eventCode === 'AltRight') {
@@ -111,6 +110,8 @@ document.addEventListener('keydown', (event) => {
   }
 
   changeKeyEvent();
+  const textarea = new Textarea(storageLang);
+  textarea.addLetter(key);
 });
 
 document.addEventListener('keyup', (event) => {

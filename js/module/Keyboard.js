@@ -23,20 +23,20 @@ export default class Keyboard extends Element {
    * @returns {HTMLElement}
    */
   createKey(key, lang, allHidden = false) {
-    let defKey = this.createElement('span', [this.DEFAULT_KEY]);
+    this.defKey = this.createElement('span', [this.DEFAULT_KEY]);
     if (allHidden) {
-      defKey = this.createElement('span', [this.DEFAULT_KEY, this.HIDDEN]);
+      this.defKey = this.createElement('span', [this.DEFAULT_KEY, this.HIDDEN]);
     }
-    this.addValueToElement(defKey, key.defaultKey);
+    this.defKey = this.addValueToElement(this.defKey, key.defaultKey);
 
-    const shiftPressed = this.createElement('span', [this.SHIFT_PRESSED, this.HIDDEN]);
-    this.addValueToElement(shiftPressed, key.shiftPressed);
+    this.shiftPressed = this.createElement('span', [this.SHIFT_PRESSED, this.HIDDEN]);
+    this.shiftPressed = this.addValueToElement(this.shiftPressed, key.shiftPressed);
 
-    const caps = this.createElement('span', [this.CAPS, this.HIDDEN]);
-    this.addValueToElement(caps, key.caps);
+    this.caps = this.createElement('span', [this.CAPS, this.HIDDEN]);
+    this.caps = this.addValueToElement(this.caps, key.caps);
 
-    const capsShift = this.createElement('span', [this.CAPS_SHIFT, this.HIDDEN]);
-    this.addValueToElement(capsShift, key.capsShift);
+    this.capsShift = this.createElement('span', [this.CAPS_SHIFT, this.HIDDEN]);
+    this.capsShift = this.addValueToElement(this.capsShift, key.capsShift);
 
     const classesName = [];
     classesName.push(lang);
@@ -44,10 +44,10 @@ export default class Keyboard extends Element {
       classesName.push(this.HIDDEN);
     }
     const commonElement = this.createElement('span', classesName);
-    commonElement.appendChild(defKey);
-    commonElement.appendChild(shiftPressed);
-    commonElement.appendChild(caps);
-    commonElement.appendChild(capsShift);
+    commonElement.appendChild(this.defKey);
+    commonElement.appendChild(this.shiftPressed);
+    commonElement.appendChild(this.caps);
+    commonElement.appendChild(this.capsShift);
 
     return commonElement;
   }
